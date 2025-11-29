@@ -1,9 +1,9 @@
-import Header from "./layout/Header"
+import AppRoutes from "AppRoutes"
 
 const App = () => {
   return (
     <div>
-      <Header />
+      <AppRoutes />
     </div>
   )
 }

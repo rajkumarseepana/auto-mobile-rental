@@ -1,5 +1,7 @@
 import { Link, useLocation } from "react-router-dom"
-import { menuLinks } from "../data/constantsData"
+import { Search } from "lucide-react"
+import { menuLinks } from "data/constantsData"
+import { Input } from "ui/Input"
 
 const Header = () => {
     const location = useLocation()
@@ -25,6 +27,10 @@ const Header = () => {
                         {link.name}
                     </Link>
                 ))}
+                <div className="relative">
+                    <Input type="text" className="pr-9 h-9" placeholder="Search products..." />
+                    <Search className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground" size={20} />
+                </div>
             </nav>
         </header>
     )
