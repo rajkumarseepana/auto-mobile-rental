@@ -17,7 +17,7 @@ const Dashboard = () => {
                         <div>
                             <p className="text-sm font-medium text-muted-foreground mb-1">Select mode</p>
                             <Select>
-                                <SelectTrigger className="">
+                                <SelectTrigger className="rounded-full">
                                     <SelectValue placeholder="Select mode" />
                                 </SelectTrigger>
                                 <SelectContent>
