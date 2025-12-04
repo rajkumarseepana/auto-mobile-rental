@@ -23,7 +23,9 @@ const Header = () => {
 
             <nav className="flex items-center gap-6">
                 {menuLinks.map((link, index) => (
-                    <Link key={index} to={link.path} className="hover:text-primary text-2xl">
+                    <Link key={index} to={link.path} className={`text-2xl hover:text-gray-500 
+                        ${location.pathname === link.path ? "text-primary" : ""}`}
+                    >
                         {link.name}
                     </Link>
                 ))}

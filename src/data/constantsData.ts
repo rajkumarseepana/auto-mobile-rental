@@ -1,15 +1,32 @@
 export const menuLinks = [
     { name: "Dashboard", path: "/" },
-    { name: "Cars", path: "/cars" },
+    { name: "Handy", path: "/available-items" },
     { name: "My bookings", path: "/my-bookings" },
 ]
 
-export const cars = [
+export const auto_mobiles = [
     {
         id: 1,
-        image: "./placeholder.svg",
+        image: "./yamaha_r15.jpg",
+        model: "R15",
+        brand: "Yamaha",
+        type: "Bike",
+        category: "Motorbike",
+        year: 2022,
+        seats: 2,
+        fuel: "Petrol",
+        location: "Bangalore",
+        transmission: "Manual",
+        available: true,
+        pricePerDay: 900
+    },
+    {
+        id: 2,
+        image: "./tesla_s.jpg",
         model: "Model S",
         brand: "Tesla",
+        category: "Sedan",
+        year: 2023,
         seats: 5,
         fuel: "Electric",
         location: "Bangalore",
@@ -18,10 +35,27 @@ export const cars = [
         pricePerDay: 4500
     },
     {
-        id: 2,
-        image: "./placeholder.svg",
+        id: 3,
+        image: "./yamaha_mt15.jpg",
+        model: "MT-15",
+        brand: "Yamaha",
+        type: "Bike",
+        category: "Motorbike",
+        year: 2021,
+        seats: 2,
+        fuel: "Petrol",
+        location: "Hyderabad",
+        transmission: "Manual",
+        available: true,
+        pricePerDay: 950
+    },
+    {
+        id: 4,
+        image: "./Hyundai_Creta.jpg",
         model: "Creta",
         brand: "Hyundai",
+        category: "SUV",
+        year: 2022,
         seats: 5,
         fuel: "Petrol",
         location: "Hyderabad",
@@ -30,15 +64,47 @@ export const cars = [
         pricePerDay: 2200
     },
     {
-        id: 3,
-        image: "./placeholder.svg",
+        id: 5,
+        image: "./Innova_HyCross.avif",
         model: "Innova HyCross",
         brand: "Toyota",
+        category: "MUV",
+        year: 2023,
         seats: 7,
         fuel: "Hybrid",
         location: "Chennai",
         transmission: "Semi-Auto",
         available: true,
         pricePerDay: 3500
+    },
+    {
+        id: 6,
+        image: "./honda_activa.jpg",
+        model: "Activa",
+        brand: "Honda",
+        type: "Scooter",
+        category: "Scooter",
+        year: 2020,
+        seats: 2,
+        fuel: "Petrol",
+        location: "Chennai",
+        transmission: "Automatic",
+        available: false,
+        pricePerDay: 600
+    },
+    {
+        id: 7,
+        image: "./hero_splendor_plus.jpg",
+        model: "Splendor+",
+        brand: "Hero",
+        type: "Bike",
+        category: "Motorbike",
+        year: 2019,
+        seats: 2,
+        fuel: "Petrol",
+        location: "Pune",
+        transmission: "Manual",
+        available: true,
+        pricePerDay: 650
     }
 ];

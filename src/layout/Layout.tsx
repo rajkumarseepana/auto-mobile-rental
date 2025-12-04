@@ -8,7 +8,7 @@ const Layout = () => {
                 <Header />
 
                 <div className="flex-1 overflow-y-auto lg:peer-hover:pl-64 bg-gray-50 h-[calc(100vh-4rem)] transition-all duration-300">
-                    <div className=' px-10 py-4 flex-1 overflow-auto'>
+                    <div className='flex-1 overflow-auto'>
                         <Outlet />
                     </div>
                 </div>
