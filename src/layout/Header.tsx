@@ -2,10 +2,14 @@ import { Link, useLocation } from "react-router-dom"
 import { Search } from "lucide-react"
 import { menuLinks } from "data/constantsData"
 import { Input } from "ui/Input"
+import Button from "ui/Button"
+import { useState } from "react"
+import Login from "components/dialog-boxes/Login"
 
 const Header = () => {
-    const location = useLocation()
-    const isHome = location.pathname === "/"
+    const location = useLocation();
+    const isHome = location.pathname === "/";
+    const [openLogin, setOpenLogin] = useState(false);
 
     return (
         <header
@@ -33,7 +37,18 @@ const Header = () => {
                     <Input type="text" className="pr-9 h-9" placeholder="Search products..." />
                     <Search className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground" size={20} />
                 </div>
+                <Button variant="primary"
+                    onClick={() => { setOpenLogin(true) }}
+                >
+                    Log In
+                </Button>
             </nav>
+            {openLogin && (
+                <Login
+                    open={openLogin}
+                    onOpenChange={setOpenLogin}
+                />
+            )}
         </header>
     )
 }
